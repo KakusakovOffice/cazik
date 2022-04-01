@@ -1,23 +1,23 @@
-M=int(input('введите ставку'))
-C7=0
-C8=0
-C9=0
-C10=0
-CJ=0
-CQ=0
-CK=0
-CA=0
-Cjackpot=0
-C6=0
+bet = int(input('введите ставку'))
+C7 = 0
+C8 = 0
+C9 = 0
+C10 = 0
+CJ = 0
+CQ = 0
+CK = 0
+CA = 0
+Cjackpot = 0
+C6 = 0
 from random import randint
-N=1
-f=[0]*N
-b=[0]*N
-c=[0]*N
-d=[0]*N
-e=[0]*N
+N = 1
+f = [0]*N
+b = [0]*N
+c = [0]*N
+d = [0]*N
+e = [0]*N
 for i in range (N):
-    f[i]=randint(1,1001)
+    f[i] = randint(1,1001)
     b[i] = randint(1, 1001)
     c[i] = randint(1, 1001)
     d[i] = randint(1, 1001)
@@ -133,172 +133,172 @@ if 740 < e < 901:
 if 900 < e < 1001:
     i5 = '7'
 if '6' in i1:
-    C6=C6+1
+    C6 = C6+1
 if '7' in i1:
-    C7=C7+1
+    C7 = C7+1
 if '8' in i1:
-    C8=C8+1
+    C8 = C8+1
 if '9' in i1:
-    C9=C9+1
+    C9 = C9+1
 if '10' in i1:
-    C10=C10+1
+    C10 = C10+1
 if 'j' in i1:
-    CJ=CJ+1
+    CJ = CJ+1
 if 'Q' in i1:
-    CQ=CQ+1
+    CQ = CQ+1
 if 'K' in i1:
-    CK=CK+1
+    CK = CK+1
 if 'A' in i1:
-    CA=CA+1
+    CA = CA+1
 if 'jackpot' in i1:
-    Cjackpot=Cjackpot+1
+    Cjackpot = Cjackpot+1
 if '6' in i2:
-    C6=C6+1
+    C6 = C6+1
 if '7' in i2:
-    C7=C7+1
+    C7 = C7+1
 if '8' in i2:
-    C8=C8+1
+    C8 = C8+1
 if '9' in i2:
-    C9=C9+1
+    C9 = C9+1
 if '10' in i2:
-    C10=C10+1
+    C10 = C10+1
 if 'j' in i2:
-    CJ=CJ+1
+    CJ = CJ+1
 if 'Q' in i2:
-    CQ=CQ+1
+    CQ = CQ+1
 if 'K' in i2:
-    CK=CK+1
+    CK = CK+1
 if 'A' in i2:
-    CA=CA+1
+    CA = CA+1
 if 'jackpot' in i2:
-    Cjackpot=Cjackpot+1
+    Cjackpot = Cjackpot+1
 if '6' in i3:
-    C6=C6+1
+    C6 = C6+1
 if '7' in i3:
-    C7=C7+1
+    C7 = C7+1
 if '8' in i3:
-    C8=C8+1
+    C8 = C8+1
 if '9' in i3:
-    C9=C9+1
+    C9 = C9+1
 if '10' in i3:
-    C10=C10+1
+    C10 = C10+1
 if 'j' in i3:
-    CJ=CJ+1
+    CJ = CJ+1
 if 'Q' in i3:
-    CQ=CQ+1
+    CQ = CQ+1
 if 'K' in i3:
-    CK=CK+1
+    CK = CK+1
 if 'A' in i3:
-    CA=CA+1
+    CA = CA+1
 if 'jackpot' in i3:
-    Cjackpot=Cjackpot+1
+    Cjackpot = Cjackpot+1
 if '6' in i4:
-    C6=C6+1
+    C6 = C6+1
 if '7' in i4:
-    C7=C7+1
+    C7 = C7+1
 if '8' in i4:
-    C8=C8+1
+    C8 = C8+1
 if '9' in i4:
-    C9=C9+1
+    C9 = C9+1
 if '10' in i4:
-    C10=C10+1
+    C10 = C10+1
 if 'j' in i4:
-    CJ=CJ+1
+    CJ = CJ+1
 if 'Q' in i4:
-    CQ=CQ+1
+    CQ = CQ+1
 if 'K' in i4:
-    CK=CK+1
+    CK = CK+1
 if 'A' in i4:
-    CA=CA+1
+    CA = CA+1
 if 'jackpot' in i4:
-    Cjackpot=Cjackpot+1
+    Cjackpot = Cjackpot+1
 if '6' in i5:
-    C6=C6+1
+    C6 = C6+1
 if '7' in i5:
-    C7=C7+1
+    C7 = C7+1
 if '8' in i5:
-    C8=C8+1
+    C8 = C8+1
 if '9' in i5:
-    C9=C9+1
+    C9 = C9+1
 if '10' in i5:
-    C10=C10+1
+    C10 = C10+1
 if 'j' in i5:
-    CJ=CJ+1
+    CJ = CJ+1
 if 'Q' in i5:
-    CQ=CQ+1
+    CQ = CQ+1
 if 'K' in i5:
-    CK=CK+1
+    CK = CK+1
 if 'A' in i5:
-    CA=CA+1
+    CA = CA+1
 if 'jackpot' in i5:
-    Cjackpot=Cjackpot+1
-if C6==2:
-    M=6/10*M
-if C6==3:
-    M=666/100*M
-if C7==3:
-    M=77/10*M
-if C8==2:
-    M=8/10*M
-if C8==3 or C8==4:
-    M=11/10*M
-if C8==5:
-    M=4*M
-if C9==2:
-    M=9/10*M
-if C9==3 or C9==4:
-    M=13/10*M
-if C9==5:
-    M=45/10*M
-if C10==2:
-    M=M
-if C10==3 or C10==4:
-    M=15/10*M
-if C10==5:
-    M=5*M
-if CJ==2:
-    M=11/10*M
-if CJ==3 or CJ==4:
-    M=17/10*M
-if CJ==5:
-    M=55/10*M
-if CQ==2:
-    M=12/10*M
-if CQ==3 or CQ==4:
-    M=19/10*M
-if CQ==5:
-    M=6*M
-if CK==2:
-    M=13/10*M
-if CK==3 or CK==4:
-    M=21/10*M
-if CK==5:
-    M=8*M
-if CA==2:
-    M=2*M
-if CA==3 or CA==4:
-    M=8*M
-if CA==5:
-    M=10*M
-if Cjackpot==2:
-    M=10*M
-if Cjackpot==3:
-    M=20*M
-if Cjackpot==4:
-    M=50*M
-if Cjackpot==5:
-    M=100*M
+    Cjackpot = Cjackpot+1
+if C6 == 2:
+    bet = 6/10*bet 
+if C6 == 3:
+    bet = 666/100*bet 
+if C7 == 3:
+    bet = 77/10*bet 
+if C8 == 2:
+    bet = 8/10*bet 
+if C8 == 3 or C8 == 4:
+    bet = 11/10*bet 
+if C8 == 5:
+    bet = 4*bet 
+if C9 == 2:
+    bet = 9/10*bet 
+if C9 == 3 or C9 == 4:
+    bet = 13/10*bet 
+if C9 == 5:
+    bet = 45/10*bet 
+if C10 == 2:
+    bet = bet 
+if C10 == 3 or C10 == 4:
+    bet = 15/10*bet 
+if C10 == 5:
+    bet = 5*bet 
+if CJ == 2:
+    bet = 11/10*bet 
+if CJ == 3 or CJ == 4:
+    bet = 17/10*bet 
+if CJ == 5:
+    bet = 55/10*bet 
+if CQ == 2:
+    bet = 12/10*bet 
+if CQ == 3 or CQ == 4:
+    bet = 19/10*bet 
+if CQ == 5:
+    bet = 6*bet 
+if CK == 2:
+    bet = 13/10*bet 
+if CK == 3 or CK == 4:
+    bet = 21/10*bet 
+if CK == 5:
+    bet = 8*bet 
+if CA == 2:
+    bet = 2*bet 
+if CA == 3 or CA == 4:
+    bet = 8*bet 
+if CA == 5:
+    bet = 10*bet 
+if Cjackpot == 2:
+    bet = 10*bet 
+if Cjackpot == 3:
+    bet = 20*bet 
+if Cjackpot == 4:
+    bet = 50*bet 
+if Cjackpot == 5:
+    bet = 100*bet 
 if C6>1 or C7>1 or C8>1 or C9>1 or C10>1 or CJ>1 or CQ>1 or CK>1 or CA>1 or Cjackpot>1:
-    M=M
+    bet = bet 
 else:
-    M=0
+    bet = 0
 print(i1,i2,i3,i4,i5)
-print(M)
-if Cjackpot==2:
+print(bet )
+if Cjackpot == 2:
     print('JACKPOT')
-if Cjackpot==3:
+if Cjackpot == 3:
     print('SUPER JACKPOT')
-if Cjackpot==4:
+if Cjackpot == 4:
     print('MEGA JACKPOT')
-if Cjackpot==5:
+if Cjackpot == 5:
     print('HYPER JACKPOT')
