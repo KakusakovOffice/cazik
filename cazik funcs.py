@@ -20,7 +20,7 @@ class coef_type:
     
 
 
-slots =​[''] *​5  # выпавшие слоты
+slots = [''] * 5  # выпавшие слоты
 coefs = {  # словарь, содержащий все возможные типы коэффициентов
     '6' : coef_type('6', 15, { 2 : 0.6, 3 : 6.66 }),
     '7' : coef_type('7', 13, { 3 : 7.7 }),
@@ -35,17 +35,17 @@ coefs = {  # словарь, содержащий все возможные ти
 }
 
 
-def​seed_slots(): 
+def seed_slots(): 
     # заполняет слоты названиями типов коэффициентов в соответвии с их относительной вероятностью
- ​  global​coefs,​slots 
+    global coefs, slots 
     max_p: int = 0
     this_p: int
     
     for coef in coefs.values():
         max_p += coef.get_rel_p()
     
- ​ ​for​i​in​range(len(slots)): 
-      ​ this_p =​randint(0, max_p - 1) 
+    for i in range(len(slots)): 
+        this_p = randint(0, max_p - 1) 
         for coef_key, coef in coefs.items():
             this_p -= coef.get_rel_p()
             if (this_p < 0):
@@ -65,30 +65,30 @@ def print_slots():
     
     print('', end='\n')
     
- ​  if​jackpot_counter​>=​2: 
- ​     ​if​jackpot_counter​>=​3: 
- ​     ​    print​(​'SUPER', end=' '​) 
- ​      if​jackpot_counter​>=​4: 
- ​     ​    print​(​'MEGA', end=' '​) 
- ​      if​jackpot_counter​>=​5: 
- ​    ​     print​(​'HYPER', end=' '​)
-        print​(​'JACKPOT'​) 
+    if jackpot_counter >= 2: 
+        if jackpot_counter >= 3: 
+            print( 'SUPER', end=' ') 
+        if jackpot_counter >= 4: 
+            print( 'MEGA', end=' ' ) 
+        if jackpot_counter >= 5: 
+            print( 'HYPER', end=' ' )
+        print( 'JACKPOT' ) 
 
 
-def​find_bet_multiplier(): 
- ​ ​# возвращает множитель для ставки в зависимости от значения слотов
+def find_bet_multiplier(): 
+    # возвращает множитель для ставки в зависимости от значения слотов
     mult: float = 1.0
-   ​global slots, coefs 
+    global slots, coefs 
     coefs_amount = { }
     
     for coef_key in coefs:
         coefs_amount[coef_key] = 0
     
-    for coef_key in slots:
+    for coef_key in slots:
         coefs_amount[coef_key] += 1
     
     no_combos: bool = True
-    for​coef_key, amount​in​coefs_amount.items(): 
+    for coef_key, amount in coefs_amount.items(): 
         if amount > 1:
             no_combos = False
             mult_dict = coefs[coef_key].get_coef_dict()
